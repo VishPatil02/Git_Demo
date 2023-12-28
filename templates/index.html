@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+	<title>Flask Tutorial</title>
+</head>
+<body>
+	<h3>Welcome to flask tutorial</h3>
+	<p>
+		<a href="{{ url_for('insert') }}">
+			<img src="https://cdn-icons-png.flaticon.com/512/1486/1486433.png" width="30">
+			<i>Insert your details here to see</i>
+		</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<a href="{{ url_for('table') }}">
+			<img src="https://cdn3.iconfinder.com/data/icons/letters-and-numbers-1/32/number_7_blue-512.png" width="30">
+			<i>See any table here</i>
+		</a>
+	</p><hr>
+	
+	{% for e in employees %}
+		<p>{{e.id}}, {{e.name}}, {{e.city}}, {{e.addr}}, {{e.pin}}</p>
+	{% endfor %}
+	
+	
+
+</body>
+</html>

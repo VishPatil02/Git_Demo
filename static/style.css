@@ -1,0 +1,18 @@
+body{
+    background-color: lightblue;
+    text-align: center;
+}
+
+h3{
+    color:brown;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium';
+    font-size: 30px;
+}
+p{
+    color:black;
+    text-align: justify;
+    text-decoration: wavy;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
